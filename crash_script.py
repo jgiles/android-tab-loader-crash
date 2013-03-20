@@ -1,10 +1,8 @@
 # Imports the monkeyrunner modules used by this program
 from com.android.monkeyrunner import MonkeyRunner, MonkeyDevice
-from com.android.monkeyrunner.easy import EasyMonkeyDevice, By
 
 # Connects to the current device, returning a MonkeyDevice object
 device = MonkeyRunner.waitForConnection()
-easy_device = EasyMonkeyDevice(device)
 
 # Installs the Android package. Notice that this method returns a boolean, so you can test
 # to see if the installation worked.
