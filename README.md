@@ -1,7 +1,7 @@
 android-tab-loader-crash
 ========================
 
-A simple application demonstrating strange crash behavior.
+A simple application demonstrating strange crash behavior. The crash is eliminated by moving calls to `initLoader` in each `Fragment` from within `onCreate` to `onActivityCreated`.
 
 Discussed in [this stackoverflow question](http://stackoverflow.com/questions/15490904/loader-delivers-result-to-wrong-fragment).
 
